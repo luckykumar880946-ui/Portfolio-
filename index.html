@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09070d">
+<meta name="description" content="Lucky Kumar — Model. Welcome to World Healing.">
+<title>Lucky Kumar — Model & Creative Personality</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--bg:#09070d;--plum:#1c1021;--accent:#c36bff;--accent2:#f0c6ff;--white:#f7f3fa;--muted:#b8acbf;--glass:rgba(18,12,23,.56);--line:rgba(255,255,255,.15)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#9d4dcb #09070d}body{margin:0;background:var(--bg);color:var(--white);font-family:Outfit,sans-serif;overflow-x:hidden}
+#progress{position:fixed;z-index:1000;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#ff3b55,#d76cff);box-shadow:0 0 14px #d76cff}
+#scene{position:fixed;inset:0;z-index:0;background:#151218;overflow:hidden}
+#sequence{width:100%;height:100%;display:block;filter:grayscale(1);opacity:.96}
+#scene:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,5,11,.36),transparent 42%,rgba(8,5,11,.12)),linear-gradient(0deg,rgba(8,5,11,.72),transparent 38%,rgba(8,5,11,.10));pointer-events:none}
+#frameStatus{position:absolute;right:24px;top:92px;z-index:2;font:10px 'Fira Code';letter-spacing:.12em;color:#fff9;background:rgba(0,0,0,.28);padding:8px 11px;border:1px solid #ffffff24;border-radius:30px}
+nav{position:fixed;z-index:50;top:22px;left:50%;transform:translateX(-50%);display:flex;gap:4px;padding:7px;background:rgba(16,11,20,.64);border:1px solid var(--line);backdrop-filter:blur(18px);border-radius:40px;box-shadow:0 12px 40px #0005;max-width:calc(100% - 24px)}
+nav a{color:#d9d0df;text-decoration:none;font-size:12px;padding:10px 14px;border-radius:30px;white-space:nowrap;transition:.25s}
+nav a.active,nav a:hover{background:linear-gradient(135deg,#9b4cc0,#54266f);color:white}
+.social{position:fixed;z-index:55;right:24px;bottom:24px;display:flex;gap:9px;padding:10px;background:rgba(15,10,18,.62);border:1px solid var(--line);backdrop-filter:blur(16px);border-radius:30px}
+.social a{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;color:white;text-decoration:none;background:#ffffff12;transition:.25s}
+.social a:hover{background:#9d4dcb;transform:translateY(-4px)}
+section{position:relative;z-index:2;min-height:100vh;padding:130px clamp(22px,7vw,110px) 90px;display:flex;align-items:center;pointer-events:none}
+section>*{pointer-events:auto}.inner{width:min(1120px,100%);margin:0 auto}
+.eyebrow{font:11px 'Fira Code';letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);margin-bottom:18px}
+h1,h2,.display{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.025em;margin:0;line-height:.92}
+h1{font-size:clamp(76px,13vw,178px);max-width:800px;text-shadow:0 8px 40px #0008}
+h2{font-size:clamp(54px,8vw,100px);margin-bottom:24px}
+p{color:#e1d9e5;line-height:1.75;font-size:16px;max-width:620px}
+.hero{align-items:flex-end;padding-bottom:clamp(80px,12vh,130px)}
+.hero .inner{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.hero-copy{max-width:760px}.hero-copy p{font-size:clamp(14px,1.5vw,18px);margin:18px 0 0}
+.hero-side{font:11px 'Fira Code';letter-spacing:.1em;color:#fff;line-height:2;text-align:right;padding-bottom:8px}
+.hero-side span{color:var(--accent2)}
+.glass{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:24px;box-shadow:0 20px 70px #0005}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center}
+.about-card{padding:clamp(24px,4vw,46px)}.about-card p{margin-bottom:0}
+.profile-mini{width:116px;height:116px;border-radius:50%;object-fit:cover;filter:grayscale(1);border:2px solid #d99aff;margin-bottom:24px;box-shadow:0 0 35px #a94ed855}
+.fact-list{display:grid;gap:12px}.fact{padding:18px 20px;border-radius:16px;background:#ffffff0a;border:1px solid #ffffff15}.fact small{display:block;color:var(--accent2);font:10px 'Fira Code';letter-spacing:.14em;margin-bottom:6px}.fact strong{font-weight:500}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{padding:27px;min-height:225px;transition:.3s}.service:hover,.project:hover{transform:translateY(-7px);border-color:#d28cff88}.service i{font-size:25px;color:var(--accent2);margin-bottom:24px}.service h3{font-size:21px;margin:0 0 10px}.service p{font-size:14px;margin:0;color:var(--muted)}
+.project{padding:26px;min-height:230px;transition:.3s;display:flex;flex-direction:column;justify-content:space-between}.project .number{font:12px 'Fira Code';color:var(--accent2)}.project h3{font-size:24px;margin:24px 0 8px}.project p{font-size:14px;margin:0}.tag{font:10px 'Fira Code';color:#e7c5f7;border:1px solid #ffffff22;padding:7px 10px;border-radius:30px;display:inline-block;margin:14px 5px 0 0}
+.skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill{padding:25px}.skill h3{margin:0 0 18px;font-size:20px}.skill p{font-size:14px;margin:0}
+.timeline{max-width:780px;border-left:1px solid #c36bff80;margin:30px 0 0 8px;padding-left:30px}.milestone{position:relative;padding:0 0 28px}.milestone:before{content:"";position:absolute;left:-36px;top:5px;width:10px;height:10px;background:var(--accent2);border-radius:50%;box-shadow:0 0 18px var(--accent)}.milestone small{font:10px 'Fira Code';color:var(--accent2)}.milestone h3{margin:7px 0;font-size:20px}.milestone p{margin:0;font-size:14px;color:var(--muted)}
+.contact-section{align-items:flex-end;padding-bottom:clamp(100px,13vh,145px)}.contact-card{padding:clamp(25px,4vw,48px);max-width:690px;margin-left:0}.contact-card h2{font-size:clamp(60px,9vw,110px)}.contact-card p{margin:12px 0 25px}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{color:white;text-decoration:none;border:1px solid #ffffff35;padding:12px 17px;border-radius:30px;font-size:13px;transition:.2s}.contact-links a:hover{background:#9d4dcb;border-color:#9d4dcb}
+footer{position:relative;z-index:3;text-align:left;padding:18px clamp(22px,7vw,110px);color:#b8acbf;font:10px 'Fira Code';letter-spacing:.1em}
+.scroll-note{font:10px 'Fira Code';color:#ffffffa8;letter-spacing:.16em;margin-top:28px}
+@media(max-width:760px){nav{top:12px;gap:0;padding:5px;max-width:calc(100% - 16px);overflow-x:auto;justify-content:flex-start}nav a{font-size:10px;padding:9px 10px}.social{right:12px;bottom:12px;padding:7px;gap:5px}.social a{width:34px;height:34px}section{padding:105px 20px 85px;min-height:92vh}.hero{min-height:100vh;padding-bottom:115px}.hero .inner{display:block}.hero-side{text-align:left;margin-top:28px}.hero-side br{display:none}.about-grid,.skills-wrap{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.service,.project{min-height:0}.profile-mini{width:90px;height:90px}#frameStatus{top:68px;right:12px;font-size:9px}.contact-section{align-items:flex-end}.contact-card{width:100%}h1{font-size:clamp(68px,18vw,112px)}h2{font-size:64px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="scene"><canvas id="sequence" aria-label="Scroll-driven portrait animation"></canvas><div id="frameStatus">FRAME 001 / 102</div></div>
+<nav aria-label="Main navigation">
+<a href="#hero" class="active">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+</nav>
+<div class="social" aria-label="Social links">
+<a href="https://instagram.com/fav.luckiiii" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://snapchat.com/add/fav.luvkiii" target="_blank" rel="noopener" aria-label="Snapchat"><i class="fa-brands fa-snapchat"></i></a>
+<a href="mailto:luckykumar880946@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+</div>
+<main>
+<section id="hero" class="hero"><div class="inner"><div class="hero-copy"><div class="eyebrow">Independent Model · Creative Personality</div><h1>LUCKY<br>KUMAR<span style="color:var(--accent2)">.</span></h1><p>Welcome to World Healing — expressing confidence, character and creativity through the art of modeling.</p><div class="scroll-note">SCROLL TO EXPLORE ↓</div></div><div class="hero-side">BASED IN <span>INDIA</span><br>MODEL / PERSONAL PORTFOLIO<br><span>EST. 2026</span></div></div></section>
+<section id="about"><div class="inner about-grid"><div class="glass about-card"><img class="profile-mini" src="assets/lucky-portrait.jpg" alt="Portrait of Lucky Kumar"><div class="eyebrow">01 / About me</div><h2>THE PERSON<br>BEHIND THE FRAME.</h2><p>I’m Lucky Kumar, an aspiring model with an interest in style, expression and visual storytelling. I believe every frame can communicate a mood, a story and a point of view. This portfolio is my space to introduce my personality and creative direction.</p></div><div class="fact-list"><div class="fact"><small>EDUCATION</small><strong>Class 10 · 2026–27</strong></div><div class="fact"><small>FOCUS</small><strong>Modeling · Fashion · Portraits</strong></div><div class="fact"><small>LOCATION</small><strong>India</strong></div><div class="fact"><small>PERSONAL MOTTO</small><strong>Confidence in every frame.</strong></div></div></div></section>
+<section id="services"><div class="inner"><div class="eyebrow">02 / What I bring</div><h2>MY SERVICES</h2><div class="cards"><article class="glass service"><i class="fa-solid fa-camera-retro"></i><h3>Fashion Modeling</h3><p>Expressing clothing, styling and concepts through confident poses and a clear visual identity.</p></article><article class="glass service"><i class="fa-regular fa-user"></i><h3>Portrait Modeling</h3><p>Natural expressions and portrait-focused looks for creative and personal portfolio concepts.</p></article><article class="glass service"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Creative Concepts</h3><p>Exploring moods, themes and visual directions to bring a distinctive idea to life.</p></article></div></div></section>
+<section id="projects"><div class="inner"><div class="eyebrow">03 / Selected work</div><h2>PORTFOLIO<br>HIGHLIGHTS</h2><div class="cards"><article class="glass project"><div><span class="number">01 / PERSONAL</span><h3>Monochrome Portrait</h3><p>A black-and-white portrait study focused on expression, contrast and timeless styling.</p></div><div><span class="tag">Portrait</span><span class="tag">Monochrome</span></div></article><article class="glass project"><div><span class="number">02 / STYLE</span><h3>Signature Look</h3><p>A personal style direction built around minimal black styling and confident presence.</p></div><div><span class="tag">Fashion</span><span class="tag">Editorial</span></div></article><article class="glass project"><div><span class="number">03 / CREATIVE</span><h3>Visual Identity</h3><p>Developing a consistent visual identity for a growing modeling portfolio.</p></div><div><span class="tag">Creative</span><span class="tag">Portfolio</span></div></article></div></div></section>
+<section id="skills"><div class="inner"><div class="eyebrow">04 / Creative direction</div><h2>MY SKILLS</h2><div class="skills-wrap"><div class="glass skill"><h3>Modeling & Presence</h3><p>Posing exploration · Facial expression · Camera awareness · Personal styling</p></div><div class="glass skill"><h3>Visual Interests</h3><p>Fashion aesthetics · Portrait concepts · Mood and storytelling · Editorial inspiration</p></div><div class="glass skill"><h3>Personal Strengths</h3><p>Creativity · Self-expression · Adaptability · Willingness to learn</p></div><div class="glass skill"><h3>Current Focus</h3><p>Building experience, developing confidence and shaping a distinctive portfolio.</p></div></div></div></section>
+<section id="journey"><div class="inner"><div class="eyebrow">05 / The story so far</div><h2>MY JOURNEY</h2><div class="timeline"><div class="milestone"><small>2026 — PRESENT</small><h3>Building My Modeling Identity</h3><p>Creating a personal portfolio and exploring fashion, portrait and editorial styles.</p></div><div class="milestone"><small>2026–27</small><h3>Learning & Growing</h3><p>Continuing my education while developing creative interests and confidence in front of the camera.</p></div><div class="milestone"><small>NEXT CHAPTER</small><h3>More Stories. More Frames.</h3><p>Working toward new concepts, collaborations and opportunities to grow as a model.</p></div></div></div></section>
+<section id="contact" class="contact-section"><div class="inner"><div class="glass contact-card"><div class="eyebrow">06 / Let's connect</div><h2>LET'S CREATE<br>A MOMENT.</h2><p>For modeling opportunities, creative concepts or collaborations, feel free to get in touch.</p><div class="contact-links"><a href="mailto:luckykumar880946@gmail.com"><i class="fa-regular fa-envelope"></i> Email me</a><a href="https://instagram.com/fav.luckiiii" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="https://snapchat.com/add/fav.luvkiii" target="_blank" rel="noopener"><i class="fa-brands fa-snapchat"></i> Snapchat</a></div></div></div></section>
+</main>
+<footer>© <span id="year"></span> LUCKY KUMAR · WELCOME TO WORLD HEALING</footer>
+<script>
+const totalFrames=102, canvas=document.getElementById('sequence'), ctx=canvas.getContext('2d'), status=document.getElementById('frameStatus');
+const frames=Array.from({length:totalFrames},(_,i)=>{const im=new Image();im.src=`frames/img_${String(i+1).padStart(5,'0')}.jpg`;im.onload=()=>{if(i+1===current)drawFrame(im);};return im;});
+let current=1, ticking=false;
+function drawFrame(im){const dpr=Math.min(devicePixelRatio||1,2),w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);const scale=Math.max(w/im.width,h/im.height),dw=im.width*scale,dh=im.height*scale;ctx.clearRect(0,0,w,h);ctx.drawImage(im,(w-dw)/2,(h-dh)/2,dw,dh);}
+function update(){const max=document.documentElement.scrollHeight-innerHeight;const progress=max>0?scrollY/max:0;document.getElementById('progress').style.width=(progress*100)+'%';const next=Math.min(totalFrames,Math.max(1,Math.round(progress*(totalFrames-1))+1));if(next!==current){current=next;status.textContent=`FRAME ${String(next).padStart(3,'0')} / ${totalFrames}`;}if(frames[current-1].complete&&frames[current-1].naturalWidth)drawFrame(frames[current-1]);ticking=false;}
+addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});addEventListener('resize',update);update();
+const sections=[...document.querySelectorAll('main section')], links=[...document.querySelectorAll('nav a')];
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}}),{threshold:.42});
+sections.forEach(s=>observer.observe(s));document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
